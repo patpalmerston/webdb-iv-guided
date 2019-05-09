@@ -1,5 +1,7 @@
 const router = require('express').Router();
 
+const Tracks = require('./tracks-model'); // this is the db file
+
 router.get('/', async (req, res) => {
   try {
     const tracks = await Tracks.find();
